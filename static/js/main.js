@@ -689,7 +689,7 @@ function randomizeTeam() {
     ).map( li => li.dataset.slug );
     // If there are Pokémon available, add up to 6 random picks
     if ( slugs.length > 0 ) {
-        const teamSize = Math.min( 6, slugs.length );
+        const teamSize = Math.min( 36, slugs.length );
         for ( let i = 0; i < teamSize; i++ ) {
             const idx = random( slugs.length );
             const slug = slugs[ idx ];
