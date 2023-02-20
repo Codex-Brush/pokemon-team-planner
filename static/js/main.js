@@ -185,7 +185,7 @@ function populateTeam( container ) {
     section.append( h2, ul );
 
     const template = document.querySelector( "#team-slot" );
-    for ( let i = 0 ; i < 6 ; i++ ) {
+    for ( let i = 0 ; i < 36 ; i++ ) {
         const clone = template.content.cloneNode( true );
         clone.querySelectorAll( ".slot__remove-button, .slot__info" ).forEach( div => {
             div.addEventListener( "click", clearTeamSlot );
